@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="canvas" height="364.0" onMouseClicked="#mouseClicked" width="597.0" />
+            <FlowPane prefHeight="26.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#penClicked" text="Карандаш">
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </FlowPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#easerClicked" text="Ластик">
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </FlowPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#loadImageClicked" text="Загрузить изображение">
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </FlowPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#saveImageClicked" text="Сохранить изображение">
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </FlowPane.margin>
+                  </Button>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
